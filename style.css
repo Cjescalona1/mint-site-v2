@@ -1,0 +1,146 @@
+@font-face {
+    font-family: Gloria-A;
+    src: url(res/gloria-hallelujah-v15-latin/gloria-hallelujah-v15-latin-regular.woff2) format("woff2");
+  }
+
+*{
+    color: antiquewhite;
+    margin: 0;
+    padding: 0;
+    font-family: Gloria-A; 
+}
+
+body{
+    background-image: url("res/FONDO.png");
+    background-size: cover;
+}
+.container{
+    background-image: url("res/nave11-01.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.divided{
+    height: 100%;
+    width: 43%;
+    margin-left: 50%;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+}
+
+.box-a, .box-b{
+    flex: 40%;
+    text-align: center;
+    margin-top: 30%;
+}
+
+.butt-case{
+    margin-top: 1em;
+}  
+.num{
+    display: flex;
+    margin: -1em 25%;
+}
+.num>div{
+    flex: 50%;
+  
+}
+.sus{ 
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-size: contain;
+    height: 2em;
+    position: relative;
+    top: 2em;
+}
+
+.add{ 
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-size: contain;
+    height: 2em;
+    position: relative;
+    top: 2em;
+}
+
+.val{
+    font-size: 2.5em;
+    margin-top:0.2em ;
+ } 
+
+main{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+   
+}
+
+.left{
+    width: 35vw;    
+    height: 100vh; 
+    background-image: url(res/nave-01.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.right{
+    width: 65vw;
+    height: 100vh;
+    background-image: url(res/cuadro\ transparente.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}  
+.inside-box{
+    display: flex;
+    flex-direction: row;
+    height: 40%;
+    width: 70%;
+    margin-left: 24%;
+}
+
+.mint-button{
+    background-color: #45ced4;
+    color: antiquewhite;
+    font-size: 1.5em;
+    width: 8em;
+    margin: 1em;
+    margin-top: 0;
+    border-radius: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.disclaimer{
+    text-align: center;
+    color: #e1f971;
+    margin-top: -3em;
+    line-height: 15px;
+    font-size: 12px;
+    padding: 0 2.5em;
+}
+.number{
+    font-size: 1.6em;
+    top: 43.5vw;
+    position: absolute;
+    left: 65.5vw;
+}
+.title{
+    top: 48vw;
+    position: absolute;
+    left: 58vw;
+    color: #080428;
+    text-shadow: whitesmoke 1px 1px 1px;
+}
+.info{
+    top: 52vw;
+    position: absolute;
+    left: 42vw;
+    color: #43ccd2;
+    text-align: center;
+    padding: 0px 10%;
+    line-height: 1;  
+}
