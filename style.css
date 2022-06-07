@@ -15,10 +15,10 @@ body{
     background-size: cover;
 }
 .container{
-    background-image: url("res/nave11-01.png");
+    background-image: url(res/nave11-01.png);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
+    width: 90%;
     height: 100%;
 }
 
@@ -40,7 +40,7 @@ body{
 }
 
 .butt-case{
-    margin-top: 1em;
+    margin-top: 3em;
 }  
 .num{
     display: flex;
@@ -124,23 +124,23 @@ main{
 }
 .number{
     font-size: 1.6em;
-    top: 43.5vw;
+    top: 39.5vw;
     position: absolute;
-    left: 65.5vw;
+    left: 59.9vw;
 }
 .title{
-    top: 48vw;
+    top: 43vw;
     position: absolute;
-    left: 58vw;
+    left: 54vw;
     color: #080428;
     text-shadow: whitesmoke 1px 1px 1px;
 }
 .info{
-    top: 52vw;
+    top: 46vw;
     position: absolute;
-    left: 42vw;
+    left: 27vw;
     color: #43ccd2;
     text-align: center;
-    padding: 0px 10%;
-    line-height: 1;  
+    padding: 0px 20%;
+    line-height: 1;
 }

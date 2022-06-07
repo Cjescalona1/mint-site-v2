@@ -1,10 +1,22 @@
 @media screen and (min-width: 1200px){
     .disclaimer{
         margin-top: 1em;
-        line-height: 15px;
+        line-height: 20px;
         font-size: 16px;
         padding: 0 2.5em;
         }
+    .butt-case{
+    margin-top: 0em;
+    }
+    .info{
+        top:50vw !important;
+    }
+    .number {
+        font-size: 1.6em;
+        top: 39vw;
+        
+        left: 59vw;
+    }
    
 }
 @media screen and (max-width: 1200px){
@@ -22,5 +34,8 @@
     .info{
         font-size: 1.2em;
         top: 54vw;
+   }
+   .butt-case{
+    margin-top: 0em;
    }
 }
