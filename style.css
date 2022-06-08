@@ -14,14 +14,174 @@ body{
     background-image: url("res/FONDO.png");
     background-size: cover;
 }
-.container{
+
+.row-bg{
+    background-image: url(res/nave11-01.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh; 
+}
+.row-top{
+    justify-content: center !important;
+    align-items: center !important;
+    margin-top: 32% !important;
+}
+.space{
+    height: calc(2.5vw); 
+}
+
+.tit-opt{
+    font-size: calc(1.5em + 1.5vw);
+    text-align: center;
+
+}
+ 
+.price{
+    text-align: center;
+    font-size: calc(1em + 0.5vw);
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.fee{
+    text-align: center;
+    margin-top: 0;
+}
+
+
+.num{
+    display: flex;
+    margin: -1em 5%;
+
+}
+.num>div{
+    flex: 50%;
+  
+}
+.sus{ 
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-size: contain;
+    height: 3em;
+    position: relative;
+    top: 2em;
+}
+
+.add{ 
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-size: contain;
+    height: 3em;
+    position: relative;
+    top: 2em;
+}
+
+.val{
+    font-size: 2.5em;
+    margin:0.5em ;
+ } 
+ .mint-button{
+    background-color: #45ced4;
+    color: antiquewhite;
+    font-size: 1.5em;
+    width: 6em;
+    margin-top: 0;
+    border-radius: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 20px;
+}
+.number{
+    font-size: 1.6em;
+    top: 44vw;
+    position: absolute;
+    left: 64.9vw;
+}
+
+.disclaimer{
+    text-align: center;
+    color: #e1f971;
+    margin-top: -3em;
+    line-height: 15px; 
+    padding: 0 1.5em;
+}
+.info{
+    top: 55vw;
+    position: absolute;
+    left: 44vw;
+    color: #43ccd2;
+    text-align: center;
+    padding: 0px 10%;
+    line-height: 1;
+}
+
+
+.title{
+    top: 50vw;
+    position: absolute;
+    left: 54vw;
+    color: #080428;
+    text-shadow: whitesmoke 1px 1px 1px;
+}
+@media screen and (min-width: 1400px) {
+    .mint-button{margin:0 25%;}
+    .num{margin: 0 15%;}
+    .price{font-size:   calc(1em + 1vw)} 
+    .fee{font-size:   calc(1em + 1vw);
+        margin-bottom: 0;
+    }
+    .number{font-size: calc(1em + 1vw) }
+    .disclaimer{
+        font-size:calc(14px+2vw) !important;
+        line-height: 20px !important;
+        margin-top: -4.5em;
+    }
+    .title {
+        top: 47.5vw;
+        position: absolute;
+        left: 60vw;
+        color: #080428;
+        text-shadow: whitesmoke 1px 1px 1px;
+    }
+    .info {
+        top: 50vw;
+        position: absolute;
+        left: 44vw;
+        color: #43ccd2;
+        text-align: center;
+        padding: 0;
+        line-height: 1;
+    }
+
+} 
+
+
+@media screen and (max-width: 1230px){
+    .tit-opt{
+        font-size: calc(1.2em + 1.2vw);
+    } 
+    .number{font-size: calc(1em + 0.5vw) }
+    .disclaimer{
+        font-size:10px;     
+        line-height: 16px !important;
+      
+    }
+}
+ 
+/* .container{
+    background-image: url(res/nave11-01.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 90%;
+    height: 100%;
+} */
+
+.all{
     background-image: url(res/nave11-01.png);
     background-size: cover;
     background-repeat: no-repeat;
     width: 90%;
     height: 100%;
 }
-
 .divided{
     height: 100%;
     width: 43%;
@@ -42,36 +202,6 @@ body{
 .butt-case{
     margin-top: 3em;
 }  
-.num{
-    display: flex;
-    margin: -1em 25%;
-}
-.num>div{
-    flex: 50%;
-  
-}
-.sus{ 
-    background-repeat: no-repeat;
-    cursor: pointer;
-    background-size: contain;
-    height: 2em;
-    position: relative;
-    top: 2em;
-}
-
-.add{ 
-    background-repeat: no-repeat;
-    cursor: pointer;
-    background-size: contain;
-    height: 2em;
-    position: relative;
-    top: 2em;
-}
-
-.val{
-    font-size: 2.5em;
-    margin-top:0.2em ;
- } 
 
 main{
     height: 100vh;
@@ -103,44 +233,4 @@ main{
     margin-left: 24%;
 }
 
-.mint-button{
-    background-color: #45ced4;
-    color: antiquewhite;
-    font-size: 1.5em;
-    width: 8em;
-    margin: 1em;
-    margin-top: 0;
-    border-radius: 15px;
-    font-weight: bold;
-    cursor: pointer;
-}
-.disclaimer{
-    text-align: center;
-    color: #e1f971;
-    margin-top: -3em;
-    line-height: 15px;
-    font-size: 12px;
-    padding: 0 2.5em;
-}
-.number{
-    font-size: 1.6em;
-    top: 39.5vw;
-    position: absolute;
-    left: 59.9vw;
-}
-.title{
-    top: 43vw;
-    position: absolute;
-    left: 54vw;
-    color: #080428;
-    text-shadow: whitesmoke 1px 1px 1px;
-}
-.info{
-    top: 46vw;
-    position: absolute;
-    left: 27vw;
-    color: #43ccd2;
-    text-align: center;
-    padding: 0px 20%;
-    line-height: 1;
-}
+ 

@@ -4,7 +4,7 @@
         margin-top: 2em  ;
     }
     .info {
-        top: 46vw;
+        top: 45vw ;
         padding: 0px 9%;
     }
     .number {
@@ -18,11 +18,11 @@
         margin-top: 0em;
     }
     .title {
-        top: 43vw;
-        position: absolute;
-        left: 54vw;
-        color: #080428;
-        text-shadow: whitesmoke 1px 1px 1px;
+     top: 43vw;
+    position: absolute;
+    left: 54vw;
+    color: #080428;
+    text-shadow: whitesmoke 1px 1px 1px;
     }
 }
 @media screen and (min-width: 1200px) and (max-width: 1299px) {
