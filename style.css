@@ -116,11 +116,15 @@ body{
 
 
 .title{
-    top: 50vw;
     position: absolute;
-    left: 54vw;
+    top: 8%;
+    left: 65%;
+    font-weight: bolder;
+    font-size: calc(0.7em + 1vw);
+    margin-bottom: 3em;
     color: #080428;
     text-shadow: whitesmoke 1px 1px 1px;
+    max-width: fit-content !important;
 }
 @media screen and (min-width: 1400px) {
     .mint-button{margin:0 25%;}
@@ -136,19 +140,17 @@ body{
         margin-top: -3.5em;
     }
     .title {
-        top: 47.5vw;
-        position: absolute;
-        left: 60vw;
+        font-size: calc(1.5em + 1vw);
         color: #080428;
         text-shadow: whitesmoke 1px 1px 1px;
     }
     .info {
-        top: 50vw;
+        top: 48vw;
         position: absolute;
         left: 44vw;
         color: #43ccd2;
         text-align: center;
-        padding: 0;
+        padding: 0 10%;
         line-height: 1;
     }
 
