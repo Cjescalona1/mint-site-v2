@@ -131,9 +131,9 @@ body{
     }
     .number{font-size: calc(1em + 1vw) }
     .disclaimer{
-        font-size:calc(14px+2vw) !important;
+        font-size: calc(12px + 0.5vw) !important;
         line-height: 20px !important;
-        margin-top: -4.5em;
+        margin-top: -3.5em;
     }
     .title {
         top: 47.5vw;
