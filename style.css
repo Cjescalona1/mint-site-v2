@@ -126,7 +126,7 @@ body{
     .mint-button{margin:0 25%;}
     .num{margin: 0 15%;}
     .price{font-size:   calc(1em + 1vw)} 
-    .fee{font-size:   calc(1em + 1vw);
+    .fee{ 
         margin-bottom: 0;
     }
     .number{font-size: calc(1em + 1vw) }
