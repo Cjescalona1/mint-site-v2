@@ -27,6 +27,9 @@
     .info-class-mobile{
      display: none;   
     }
+    .menu-wrapper{
+        padding: 10% 20% ;
+    }
     
 }
 @media screen and (min-width: 501px) and (max-width: 768px) {
@@ -93,12 +96,15 @@
         cursor: pointer;
         caret-color: transparent;
         position: fixed;
-        top: 5em;
+        top: 5.5em; 
         right: 5em;
         margin-left: 0;
         margin-top: 0;
         width: 2em;
         height: 40px;
         z-index: 50010;
+    }
+    .hamburger>div{
+        margin-top: 5px !important;
     }
  }
