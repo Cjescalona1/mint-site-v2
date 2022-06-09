@@ -20,12 +20,12 @@
                         <div class="col-12 center"> <h2 class="prizes">24 Matic</h2></div>
                         <div class="col-12 center">+ gas fees</div>
                         <div class="col-12 center num-group">
-                            <div class="col-4 " id="sus1"><img class="a-s"  src="./res/sus.png" alt=""></div>
-                            <div class="col-4 quant" id="val1"><input class="col-12 inp-reset" type="number" disabled placeholder="00"></div>    
-                            <div class="col-4 " id="add1"><img class="a-s" src="./res/add.png" alt=""></div>  
+                            <div class="col-4 " id="sus1"><a onclick="dis1()"><img class="a-s"  src="./res/sus.png" alt=""></a></div>
+                            <div class="col-4 quant" ><input id="val1" class="col-12 inp-reset" type="number" disabled placeholder="00"></div>    
+                            <div class="col-4 " id="add1"><a onclick="aum1()"><img class="a-s" src="./res/add.png" alt=""></a></div>  
                         </div>
                         <div class="col-12 center">
-                            <button class="mint-button col-10">Mint</button>
+                            <button class="mint-button col-10" onclick="mint1()">Mint</button>
                         </div>
                     </div>
                     <div class="col-6 ">
@@ -33,21 +33,23 @@
                         <div class="col-12 center"><h2 class="prizes">1250 $UWU</h2></div>
                         <div class="col-12 center">+ gas fees</div>
                         <div class="col-12 center num-group"> 
-                            <div class="col-4 " id="sus2"> <img class="a-s" src="./res/sus.png" alt=""></div>
-                            <div class="col-4 quant" id="val2"><input class="col-12 inp-reset" type="number" disabled placeholder="00"></div>    
-                            <div class="col-4 " id="add2"> <img class="a-s" src="./res/add.png" alt=""></div>  
+                         <div class="col-4 " id="sus2">  <a onclick="dis2()"><img class="a-s" src="./res/sus.png" alt=""></a>  </div>
+                            <div class="col-4 quant" ><input class="col-12 inp-reset" type="number" disabled placeholder="00" id="val2"></div>    
+                            <div class="col-4 " id="add2"> <a onclick="aum2()"><img class="a-s" src="./res/add.png" alt=""></a></div>  
                         </div>
                         <div class="col-12 center"> 
-                            <button class="mint-button col-10">Mint</button>
+                            
+                            <button class="mint-button col-10" id="mintBox2" style="display: none;" onclick="mintbox2()">Mint</button>
+                            <button class="mint-button col-10" id="approve2" onclick="approveMint2()">approve</button>
                         </div>
                     </div>
                     <div class="col-12 disclaimer">
                         Please make sure you are connected to the right network (Polygon Mainnet) and the correct address. Note, once you make the purchase you cannot undo this action. 
                     </div>
-                    <div class="number col-12">
+                    <div class="number col-12" id="total_mint">
                         0000/0000
                     </div> 
-                    <div class="col-12 title">
+                    <div class="col-12 title" >
                         UNDERWORLD WEIRDO
                     </div>
 
@@ -70,6 +72,8 @@
         </div>
        
     </div> 
-    
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="./js/web3.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>

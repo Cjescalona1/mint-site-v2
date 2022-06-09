@@ -14,8 +14,23 @@
 .center{
     text-align: center;
 }
+.inpu{
+    background-color:transparent;
+    font-size: 2.5em;
+    align-items: center;
+    width: 5.4rem;
+    text-align: center;
+    color: antiquewhite !important;
+}
+body{
+    background-image: url("res/FONDO.png");
+    background-size: cover;
+}
 
-.row-bg{ 
+.row-bg{
+    background-image: url(res/nave11-01.png);
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 100vh; 
 }
 .row-top{
