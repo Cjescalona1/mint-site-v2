@@ -163,10 +163,13 @@ async function loadDapp() {
           MAX_SUPPLY = await contract.methods.maxSupply().call()
           total_mint = await contract.methods.totalSupply().call()
           PriceMatic = await contract.methods.cost().call() 
+           price = await contract2.methods.Price().call()
 
           var cantotal = parseFloat(total_mint) - parseFloat(balance2);
           console.log(cantotal)
           document.getElementById("total_mint").textContent = `${parseFloat(total_mint) - parseFloat(balance2)} / ${MAX_SUPPLY}`  
+          document.getElementById("priceUWU").textContent = `${price} $UWU`  
+          document.getElementById("priceMATIC").textContent = `${web3.utils.fromWei(PriceMatic)} $MATIC`  
     
 
 
