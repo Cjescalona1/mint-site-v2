@@ -206,7 +206,7 @@ function approveMint2() {
   var box2 = document.getElementById('val2').value
 
   var p = (parseFloat((web3.utils.fromWei(price) * 0.1) / 100) * parseFloat(box2))
-  var pbox2 = (parseFloat(web3.utils.fromWei(price)) + p) * parseFloat(box2);
+  var pbox2 = (parseFloat(price) ) * parseFloat(box2);
 
  
   console.log(pbox2)
