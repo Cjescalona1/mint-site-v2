@@ -346,28 +346,7 @@ var init1 = 0;
 function aum1() {
 
   var cantidad = document.getElementById('val1').value = ++init1; 
-  var p = (parseFloat((web3.utils.fromWei(PriceBox1) * 0.1) / 100) * parseFloat(cantidad))
-  var pbox1 = (parseFloat(web3.utils.fromWei(PriceBox1)) + p) * parseFloat(cantidad);
-  document.getElementById("PriceBox1").textContent = pbox1.toFixed(2) + " $UWU"
-
-
-
-  tokenContract.methods.allowance(accounts[0], NftsAddress).call().then(result => {
-    spend = web3.utils.fromWei(result)
  
-
-    if (spend >= pbox1) {
-     
-      $("#mintBox1").show();
-      $("#approve1").hide();
-
-    }else{
-      $("#mintBox1").hide();
-      $("#approve1").show();
-    }
-  }).catch((err) => {
-    console.log(err)
-  });
 
 
 }
@@ -379,25 +358,6 @@ function dis1() {
 
   } else {
     var cantidad = document.getElementById('val1').value = --init1; //se obtiene el valor del input, y se decrementa en 1 el valor que tenga.
-    var p = (parseFloat((web3.utils.fromWei(PriceBox1) * 0.1) / 100) * parseFloat(cantidad))
-    var pbox1 = (parseFloat(web3.utils.fromWei(PriceBox1)) + p) * parseFloat(cantidad);
-    document.getElementById("PriceBox1").textContent = pbox1.toFixed(2) + " $UWU"
-    
-  tokenContract.methods.allowance(accounts[0], NftsAddress).call().then(result => {
-    spend = web3.utils.fromWei(result)
- 
-
-    if (spend >= pbox1) {
-     
-      $("#mintBox1").show();
-      $("#approve1").hide();
-
-    }else{
-      $("#mintBox1").hide();
-      $("#approve1").show();
-    }
-  }).catch((err) => {
-    console.log(err)
-  });
+   
   }
 }
