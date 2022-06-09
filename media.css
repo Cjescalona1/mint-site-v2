@@ -23,6 +23,7 @@
         background-repeat: no-repeat;
         overflow-x: hidden;
     } 
+    
     .info-class-mobile{
      display: none;   
     }
@@ -38,8 +39,14 @@
         background-repeat: no-repeat;
         overflow-x: hidden; 
     }
+   
+  
+    .row-bg{
+        background-color: transparent !important;
+    }
+
     .mobile-cartel {
-        background-image: url(res/Option\ B.png) ;
+        background-image: url("res/Option\ B.png") ;
         background-size: contain;
         background-repeat: no-repeat;
         transform: scale(1.25);
