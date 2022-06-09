@@ -1,5 +1,21 @@
 
-    
+@media screen and (min-width: 1700px) {
+    .prizes{
+        font-size: 4em;
+        margin-top: 1em;
+    }
+    .mint-button{
+        height: 3em;
+        }
+    .number{
+        font-size: 3em;
+    }
+    .info-class{
+        font-size: 1.8em;
+    }
+  
+}
+
 @media screen and (min-width: 768px) {
     body{
         background-image:url(res/nave11-01.png), url("res/FONDO.png");
