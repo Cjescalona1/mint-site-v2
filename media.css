@@ -30,12 +30,40 @@
     .menu-wrapper{
         padding: 10% 20% ;
     }
-    
+    .M{display: none;}
+    .D{
+        top: 1em;
+    }
+   .D>ul{
+    margin-top: 2em;
+    display: flex;
+    justify-content: right;
+    margin-bottom: -4em;
+    list-style: none;
+   } 
+    .D>ul>li{
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    .D>ul>li>a{
+        color: antiquewhite;
+        font-size: 1.5em;
+        text-decoration: none;
+    }
+    .D>ul>li>a>img{
+        height: 45px;
+        width: 45px;
+    }
 }
 @media screen and (min-width: 501px) and (max-width: 768px) {
     
 }
 @media screen and (max-width: 767px) {
+    .D{
+        display: none;
+    }
+
+
     .body-mobile{
         background-image:url("res/FONDO.png"); 
         background-size: cover;
@@ -78,11 +106,13 @@
         display: none;
     }
     .info-class-mobile{
-        color: #43ccd2; 
-        top: 120vw;
-        position: absolute; 
-        text-align: justify;
-        font-size: 1.4em;
+        position: fixed;
+        background-image: url(res/nave-02.png);
+        background-size: contain;
+        height: 50vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        bottom: 3em;
     }
     .title {
         font-weight: bolder;
@@ -91,6 +121,7 @@
         top: 100vw;
         position: absolute;
         font-size: 8vw;
+        display: none;
     }
     .hamburger {
         cursor: pointer;
