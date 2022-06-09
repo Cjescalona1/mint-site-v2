@@ -14,7 +14,7 @@ var balance
 var tokenbalance
 var available
 var mynft;
-let balance2 = 0;
+var balance2 ;
 var currentAddr = null;
 var balanceNFT
 var IsAproba;
@@ -123,8 +123,7 @@ async function loadAccount() {
 
   accounts = await web3.eth.getAccounts()
   balance = await contract.methods.balanceOf(accounts[0]).call()
-   balance2 = await contract2.methods.getStakeNftBalance().call()
-   console.log(balance2)
+   
    price = await contract2.methods.Price().call()
    var balanceadmin = await contract.methods.balanceOf(accounts[0]).call()
   
@@ -159,12 +158,14 @@ async function loadDapp() {
         var awaitContract = async function () {
           contract = await getContract(web3);
 
-
+          balance2 = await contract2.methods.getStakeNftBalance().call()
+          
           MAX_SUPPLY = await contract.methods.maxSupply().call()
           total_mint = await contract.methods.totalSupply().call()
           PriceMatic = await contract.methods.cost().call() 
 
-
+          var cantotal = parseFloat(total_mint) - parseFloat(balance2);
+          console.log(cantotal)
           document.getElementById("total_mint").textContent = `${parseFloat(total_mint) - parseFloat(balance2)} / ${MAX_SUPPLY}`  
     
 
@@ -250,9 +251,9 @@ const mint1 = async () => {
 
 const mint2 = async () => {
 
-    var box1 = document.getElementById('val2').value
+    var mount2 = document.getElementById('val2').value
 
-    const result = await contract.methods.mintBox1(box1)
+    const result = await contract2.methods.buyNfts(mount2)
       .send({ from: accounts[0] })
       loadDapp()
   
