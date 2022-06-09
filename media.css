@@ -1,4 +1,4 @@
-@media screen and (min-width: 1300px)  {
+/* @media screen and (min-width: 1300px)  {
     
     .butt-case {
         margin-top: 2em  ;
@@ -7,11 +7,7 @@
         top: 45vw ;
         padding: 0px 9%;
     }
-    .number {
-        font-size: 1.8em;
-        top: 39vw;
-        left: 59vw;
-    }
+   
     .disclaimer {
         line-height: 20px;
         font-size: 16px;
@@ -38,12 +34,7 @@
     .info{
         top:50vw ;
     }
-    .number {
-        font-size: 1.6em;
-        top: 39vw;
-        
-        left: 59vw;
-    }
+     
    
 }
 @media screen and (max-width: 1199px){
@@ -51,10 +42,7 @@
         transform: scale(0.8);
         margin-top: -1em;
     }
-    .number{
-        font-size: 1.2em;
-    }
- 
+   
     .title{
         font-size: 1.6em;
     }
@@ -65,4 +53,4 @@
    .butt-case{
     margin-top: 0em;
    }
-}
+} */

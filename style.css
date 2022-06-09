@@ -8,17 +8,21 @@
     margin: 0;
     padding: 0;
     font-family: Gloria-A; 
+
 }
+
 
 body{
-    background-image: url("res/FONDO.png");
-    background-size: cover;
-}
-
-.row-bg{
-    background-image: url(res/nave11-01.png);
+    background-image:url(res/nave11-01.png), url("res/FONDO.png");
     background-size: cover;
     background-repeat: no-repeat;
+    overflow-x: hidden;
+} 
+.center{
+    text-align: center;
+}
+
+.row-bg{ 
     height: 100vh; 
 }
 .row-top{
@@ -47,6 +51,36 @@ body{
     margin-top: 0;
 }
 
+.num-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.quant{
+    font-size:3em;
+}
+.a-s:hover{
+        cursor: pointer;
+}
+
+
+.inp-reset{
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    vertical-align: center;
+    justify-content: center;
+    caret-color: transparent;
+    color: antiquewhite !important; 
+}
+
+.disclaimer{
+    text-align: center;
+    color: #e1f971;
+    font-size:  1vw; 
+    margin-top: 2em !important;
+}
 
 .num{
     display: flex;
@@ -84,17 +118,17 @@ body{
     color: antiquewhite;
     font-size: 1.5em;
     width: 6em;
-    margin-top: 0;
+   
     border-radius: 15px;
     font-weight: bold;
     cursor: pointer;
-    margin-left: 20px;
+   
 }
-.number{
+.number {
     font-size: 1.6em;
-    top: 44vw;
+    top: 43.5vw;
     position: absolute;
-    left: 64.9vw;
+    left: 63.5vw;
 }
 
 .disclaimer{
@@ -103,323 +137,31 @@ body{
     margin-top: -3em;
     line-height: 15px; 
     padding: 0 1.5em;
-}
-.info{
+} 
+.info-class{
+    color: #43ccd2;
+    text-align: center; 
     top: 55vw;
     position: absolute;
-    left: 44vw;
-    color: #43ccd2;
-    text-align: center;
-    padding: 0px 10%;
-    line-height: 1;
+    left: calc (50vw - 1.5em);
+    
 }
 .fee{
     margin-bottom: 0;
 }
-.title{
-    position: absolute;
-    top: 8%;
-    left: 65%;
-    font-weight: bolder;
-    font-size: calc(0.7em + 1vw);
-    margin-bottom: 3em;
-    color: #080428;
-    text-shadow: whitesmoke 1px 1px 1px;
-    max-width: fit-content !important;
-}
-
-@media screen and (min-width:900px) and (max-width:1200px) {
-    .num {
-        margin: -1em -30%;
-    }
-    #sus1 {
-        margin-left: 3em !important;
-    }
-    
-}
-@media screen and (min-width: 1440px) {
-    .num {
-        margin: 0 40% !important;
-    }
-    .mint-button {
-        margin: 0 50% !important;
-    }
-}
-
-@media screen and (min-width: 1400px) {
-    .mint-button{margin:0 25%;}
-    .num{margin: 0 15%;}
-    .price{font-size:   calc(1em + 1vw)} 
-    .fee{ 
-        margin-bottom: 0;
-    }
-    .number{font-size: calc(1em + 1vw) }
-    .disclaimer{
-        font-size: calc(12px + 0.5vw) !important;
-        line-height: 20px !important;
-        margin-top: -3.5em;
-    }
-    .title {
-        font-size: calc(1.5em + 1vw);
-        color: #080428;
-        text-shadow: whitesmoke 1px 1px 1px;
-    }
-    .info {
-        top: 48vw;
-        position: absolute;
-        left: 44vw;
-        color: #43ccd2;
-        text-align: center;
-        padding: 0 10%;
-        line-height: 1;
-    }
-
-} 
-
-
-@media screen and (min-width:900px ) {
-    .price{
-        font-size: calc(0.9em + 0.5vw);
-        text-align: right;
-    }
-    .fee{
-        text-align: right;
-    }
-    #sus1{
-        margin-left: 1em;
-    }
-    .mint-button{
-        width: 7em !important;
-    }
-
-}
-@media screen and (max-width: 1230px){
-    .tit-opt{
-        font-size: calc(1.2em + 1.2vw);
-    } 
-    .number{font-size: calc(1em + 0.5vw) }
-    .disclaimer{
-        font-size:10px;     
-        line-height: 16px !important;
-      
-    }
-}
-@media only screen 
-and (max-device-width : 480px) {
-    *{
-        overflow: hidden;
-    }
-
-.row-bg{
-    background-image: url(res/cartel.png);
-    background-size: contain;           
-    background-repeat: no-repeat;
-    height: 100vh; 
-    background-position: center;    
-}
-.blank{    
-    background-image: url(res/cuadro\ transparente.png);
-    background-position: top;
-    background-size: contain;
-}
-.cartel{
-    background-image: url(res/cartel.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 100vh;
-    transform: scale(1.2);
-    background-position: -20px 12%;
-}
-.title {
-    position: absolute;
-    top: 41vh;
-    left: 12%;
-    font-weight: bolder;
-    margin-bottom: 3em;
-    color: #080428;
-    max-width: fit-content !important;
-    font-size: 1.5em;
-}
-.option-a,.option-b{
-    margin-top: 1em !important;
-    margin-left: 1em !important;
-    margin-right: -1em !important;
-
-}
-.space{
-    display: none !important;
-}
-.fee{
-    font-size: 11px;
-}
-.num{
-    transform: scale(0.5);
-    margin: 0;
-    margin:-4em 5em -1em 1em;
-}
-.mint-button{
-    width: 4em;
-    margin-top: -3em !important;
-    margin-left: 12px;
-}
-.info {
-    top: 100vw;
-    position: absolute;
-    left: 0;
-    padding: 0px 12%;
-    line-height: 1;
-    text-align:  justify !important;
-}
-.disclaimer {
-    text-align: center;
-    color: #e1f971;
-    margin-top: 30em;
-    line-height: 15px;
-    padding: 0 4em;
-}
-.number {
-    font-size: 12px;
-    top: 81vw;
-    position: absolute;
-    left: 42.9vw;
-}
-}
-
-@media only screen 
-and (max-device-width : 375px) {
-
-.row-bg{
-    background-image: url(res/cartel.png);
-    background-size: contain;           
-    background-repeat: no-repeat;
-    height: 100vh; 
-    background-position: center;    
-}
-.blank{    
-    background-image: url(res/cuadro\ transparente.png);
-    background-position: top;
-    background-size: contain;
-}
-.cartel{
-    background-image: url(res/cartel.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 100vh;
-    transform: scale(1.2);
-    background-position: -20px 12%;
-}
-.title {
-    position: absolute;
-    top: 48vh;
-    left: 12%;
-    font-weight: bolder;
-    margin-bottom: 3em;
-   
-    max-width: fit-content !important;
-    font-size: 1.5em;
-}
-
-.option-a,.option-b{
-    margin-top: 0em !important;
-  
-} 
-.mint-button{
-    width: 5.5em;
-    height: 1.8em !important;
-    margin-left: 5px;
-    font-size: 17px;
-}
-.number{
-    top: 76vw;
-}
-.disclaimer{
-    margin-top: 25em;
-}
-
-} 
-@media screen and (max-device-width:360px) {
-    .tit-opt {
-        font-size: calc(1.2em + 1.1vw);
-        margin-top: 0.5em;
-    }
-    .number {
-        top: 79vw;
-    }
-    .info{top:105vw}
-    .fee{
-        margin-bottom: 0 !important;
-    }
-    .title{
-        top:90vw !important;
-    }
-    .disclaimer {
-        margin-top: 30em;
-    }
-}
-/* .container{
-    background-image: url(res/nave11-01.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 90%;
-    height: 100%;
-} */
-
-.all{
-    background-image: url(res/nave11-01.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 90%;
-    height: 100%;
-}
-.divided{
-    height: 100%;
-    width: 43%;
-    margin-left: 50%;
-}
-
-.box{
-    display: flex;
-    flex-direction: row;
-}
-
-.box-a, .box-b{
-    flex: 40%;
-    text-align: center;
-    margin-top: 30%;
-}
-
-.butt-case{
-    margin-top: 3em;
-}  
-
-main{
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-   
-}
-
-.left{
-    width: 35vw;    
-    height: 100vh; 
-    background-image: url(res/nave-01.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.right{
-    width: 65vw;
-    height: 100vh;
-    background-image: url(res/cuadro\ transparente.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-}  
-.inside-box{
-    display: flex;
-    flex-direction: row;
-    height: 40%;
-    width: 70%;
-    margin-left: 24%;
-}
-
  
+.title{     
+    font-weight: bolder;
+    color: #080428;
+    max-width: fit-content !important;
+    top: 50vw;
+    position: absolute;
+    left: calc (50vw - 1.5em);
+    font-size: 2em;
+}
+
+.fin{
+    height: 2em;
+    top: 72vw;
+    position: absolute;
+}
