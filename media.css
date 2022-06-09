@@ -37,7 +37,7 @@
         background-image:url("res/FONDO.png"); 
         background-size: cover;
         background-repeat: no-repeat;
-        overflow-x: hidden; 
+        overflow: hidden; 
     }
    
   
@@ -46,7 +46,7 @@
     }
 
     .mobile-cartel {
-        background-image: url("res/Option\ B.png") ;
+        background-image: url("res/Option\ B.png")  ;
         background-size: contain;
         background-repeat: no-repeat;
         transform: scale(1.25);
@@ -87,6 +87,18 @@
         max-width: fit-content !important;
         top: 100vw;
         position: absolute;
-        font-size: 2em;
+        font-size: 8vw;
+    }
+    .hamburger {
+        cursor: pointer;
+        caret-color: transparent;
+        position: fixed;
+        top: 5em;
+        right: 5em;
+        margin-left: 0;
+        margin-top: 0;
+        width: 2em;
+        height: 40px;
+        z-index: 50010;
     }
  }

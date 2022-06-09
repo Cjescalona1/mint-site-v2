@@ -124,6 +124,7 @@
     border-radius: 15px;
     font-weight: bold;
     cursor: pointer;
+    border-color: transparent;
    
 }
 .number {
@@ -171,4 +172,140 @@
 
 .T{
     border: solid 1px #45ced4;
+}
+
+  /**
+    Hamburger
+  **/
+  .hamburger {
+    cursor: pointer;
+    caret-color: transparent;
+    position: fixed;
+    top: 1em;
+    right: 3em;
+    margin-left: 0;
+    margin-top: 0;
+    width: 2em;
+    height: 45px;
+    z-index: 50010;
+  }
+  
+  .hamburger div {
+    position: relative;
+    width: 2em;
+    height: 4px;
+    border-radius: 3px;
+    background-color: orange;
+    margin-top: 8px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+#toggle {
+    display: none;
+  }
+
+   /**
+  Nav Styles
+  **/
+  .nav-b {
+    padding: 0;
+    user-select: none;
+    width: 100%;
+    height: 100%; 
+    top: -100%; left: 0; right: 0; bottom: 0;
+    overflow: hidden;
+    transition: all .7s ease-in-out; 
+  }
+  .nav-b-wrapper {
+    position: relative;
+    overflow: hidden;
+    overflow-y: auto;
+    height: 100%;
+  }
+  nav{
+    text-align: left;
+    margin-left: 25%;
+  }
+  nav a {
+    position: relative;
+    text-decoration: none;
+    color: #6ecddd;
+    font-size: 2em;
+    display: inline-block;
+    margin-top: 1.25em;
+    transition: color 0.2s ease-in-out;
+    letter-spacing: 1px;
+  }
+  nav a:before {
+    content: '';
+    height: 0;
+    position: absolute;
+    width: 0.25em;
+    background-color: white;
+    left: -0.5em;
+    transition: all 0.5s ease-in-out;
+  }
+  nav a:hover {
+    color: white;
+  }
+  nav a:hover:before {
+    height: 100%;
+  }
+  
+  /**
+  Animations
+  **/
+  #toggle:checked + .hamburger .top-bun {
+    transform: rotate(-45deg);
+    margin-top: 25px;
+  }
+  #toggle:checked + .hamburger .bottom-bun {
+    opacity: 0;
+    transform: rotate(45deg);
+  }
+  #toggle:checked + .hamburger .meat {
+    transform: rotate(45deg);
+    margin-top: -7px;
+  }
+  #toggle:checked + .hamburger + .overlay +.no-mov{
+    transform: scale(1);
+    top: 0;
+  
+  }
+
+  #toggle:checked + .hamburger + .nav-b {
+    top: 0;
+}
+ 
+.overlay{
+    background-image: url("res/menu-drops-down.svg");
+    background-repeat: no-repeat;
+    height: 100vh; 
+    top: -1900px;
+    position: fixed;
+    z-index: 5005;
+    display: flex;
+    background-size: cover;
+    justify-content: center;
+  }
+.menu-wrapper{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;  
+    padding: 15% 20%;
+    font-size: larger;
+    margin-top: 3em; 
+}  
+.menu-wrapper>div>a{
+    text-decoration: none;
+    color:antiquewhite;
+    font-size: 5vw;    
+    
+}
+.iconC{
+    width: 6vw;
+    height: 6vw;
 }
