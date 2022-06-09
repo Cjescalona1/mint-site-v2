@@ -168,7 +168,7 @@ async function loadDapp() {
           var cantotal = parseFloat(total_mint) - parseFloat(balance2);
           console.log(cantotal)
           document.getElementById("total_mint").textContent = `${parseFloat(total_mint) - parseFloat(balance2)} / ${MAX_SUPPLY}`  
-          document.getElementById("priceUWU").textContent = `${price} $UWU`  
+          document.getElementById("priceUWU").textContent = `${web3.utils.fromWei(price)} $UWU`  
           document.getElementById("priceMATIC").textContent = `${web3.utils.fromWei(PriceMatic)} $MATIC`  
     
 
@@ -206,7 +206,7 @@ function approveMint2() {
   var box2 = document.getElementById('val2').value
 
   var p = (parseFloat((web3.utils.fromWei(price) * 0.1) / 100) * parseFloat(box2))
-  var pbox2 = (parseFloat(web3.utils.fromWei(price)) + p) * parseFloat(box2);
+  var pbox2 = (parseFloat(web3.utils.fromWei(price)) ) * parseFloat(box2);
 
  
   console.log(pbox2)
