@@ -7,6 +7,7 @@ var MAX_PRESALE_SUPPLY = null
 var contract
 var contract2
 var accounts
+var misNftsID2 = [];
 var web3
 var spend;
 var balance
@@ -124,7 +125,7 @@ async function loadAccount() {
   balance = await contract.methods.balanceOf(accounts[0]).call()
    balance2 = await contract2.methods.getStakeNftBalance().call()
    price = await contract2.methods.Price().call()
-
+   var balanceadmin = await contract.methods.balanceOf(accounts[0]).call()
   
   tokenContract.methods.balanceOf(accounts[0]).call().then(userBalance => {
     let amt = web3.utils.fromWei(userBalance);
@@ -136,7 +137,12 @@ async function loadAccount() {
 
 
 
+  for(var i = 0; i < balanceadmin; i++){
+    misNftsID2[i] = await contract.methods.tokenOfOwnerByIndex(accounts[0], i).call();
+  }
+  document.getElementById("nftsss").textContent =  misNftsID2;
 
+  console.log("nfts " + misNftsID2)
 
 }
 
@@ -213,7 +219,7 @@ function approveBox2(_amount) {
   }
 
   let _spend = web3.utils.toWei(amt.toString())
-  tokenContract.methods.approve(NftsAddress, _spend).send({ from: accounts[0] }).then(result => {
+  tokenContract.methods.approve(contractAddress2, _spend).send({ from: accounts[0] }).then(result => {
     $("#mintBox2").show();
     $("#approve2").hide();
 
@@ -299,3 +305,33 @@ function dis1() {
    
   }
 }
+
+
+
+const NftAproadmin = async () => {
+  const result = await contract.methods.setApprovalForAll(contractAddress2, true)
+    .send({ from: accounts[0], gas: 0, value: 0 })
+    .catch((revertReason) => {
+
+    });
+}
+
+const AdmidstakeNFT = async (_idnfts) => {
+  const element= []
+  var nfts = document.getElementById("nftsadmin").value;
+  
+      for (let e = 0; e < nfts ; e++) {
+         element[e] = misNftsID2[e];
+        
+      }
+      console.log(element)
+  
+      contract2.methods.AdmidstakeNFT(element).send({ from: accounts[0] }).then(result => {
+      loadDapp()
+  
+    }).catch((err) => {
+      console.log(err)
+    });
+  
+  
+  }
