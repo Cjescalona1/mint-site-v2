@@ -1,56 +1,69 @@
-/* @media screen and (min-width: 1300px)  {
+
     
-    .butt-case {
-        margin-top: 2em  ;
+@media screen and (min-width: 768px) {
+    body{
+        background-image:url(res/nave11-01.png), url("res/FONDO.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow-x: hidden;
+    } 
+    .info-class-mobile{
+     display: none;   
     }
-    .info {
-        top: 45vw ;
-        padding: 0px 9%;
+    
+}
+@media screen and (min-width: 501px) and (max-width: 768px) {
+    
+}
+@media screen and (max-width: 768px) {
+    body{
+        background-image:url("res/FONDO.png"); 
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow-x: hidden; 
     }
-   
-    .disclaimer {
-        line-height: 20px;
-        font-size: 16px;
-        margin-top: 0em;
+    .mobile-cartel {
+        background-image: url(res/Option\ B.png) ;
+        background-size: contain;
+        background-repeat: no-repeat;
+        transform: scale(1.25);
+        background-position: -2em 4em;
+    }
+    .tit-opt, .disclaimer{
+        display: none;
+    }
+    .cartel{
+        width: 100vw !important;
+    }
+    .row-top {
+        justify-content: center !important;
+        align-items: center !important;
+        margin-top: 34% !important;
+        transform: scale(0.475);
+    }
+    .number {
+        font-size: 1.5em;
+        top: 77.5vw;
+        position: absolute;
+        left: 25vw;
+        overflow: hidden;
+    }
+    .info-class{
+        display: none;
+    }
+    .info-class-mobile{
+        color: #43ccd2; 
+        top: 120vw;
+        position: absolute; 
+        text-align: justify;
+        font-size: 1.4em;
     }
     .title {
-     top: 43vw;
-    position: absolute;
-    left: 54vw;
-    color: #080428;
-    text-shadow: whitesmoke 1px 1px 1px;
+        font-weight: bolder;
+        color: whitesmoke;
+        max-width: fit-content !important;
+        top: 100vw;
+        position: absolute;
+        font-size: 2em;
     }
-}
-@media screen and (min-width: 1200px) and (max-width: 1299px) {
-    .disclaimer{
-        margin-top: -1em;
-        line-height: 20px;
-        font-size: 14px;
-        padding: 0 2.5em;
-        }
-    .butt-case{
-    margin-top: 0em;
-    }
-    .info{
-        top:50vw ;
-    }
-     
-   
-}
-@media screen and (max-width: 1199px){
-    .box{
-        transform: scale(0.8);
-        margin-top: -1em;
-    }
-   
-    .title{
-        font-size: 1.6em;
-    }
-    .info{
-        font-size: 1.2em;
-        top: 54vw;
-   }
-   .butt-case{
-    margin-top: 0em;
-   }
-} */
+ }

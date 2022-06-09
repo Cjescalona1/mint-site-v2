@@ -10,14 +10,7 @@
     font-family: Gloria-A; 
 
 }
-
-
-body{
-    background-image:url(res/nave11-01.png), url("res/FONDO.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    overflow-x: hidden;
-} 
+ 
 .center{
     text-align: center;
 }
@@ -129,6 +122,7 @@ body{
     top: 43.5vw;
     position: absolute;
     left: 63.5vw;
+    overflow: hidden;
 }
 
 .disclaimer{
@@ -164,4 +158,8 @@ body{
     height: 2em;
     top: 72vw;
     position: absolute;
+}
+
+.T{
+    border: solid 1px #45ced4;
 }
