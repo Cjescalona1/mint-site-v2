@@ -17,12 +17,13 @@
 }
 
 @media screen and (min-width: 768px) {
-    body{
+    .body-desktop{
         background-image:url(res/nave11-01.png), url("res/FONDO.png");
         background-size: cover;
         background-repeat: no-repeat;
         overflow-x: hidden;
     } 
+    
     .info-class-mobile{
      display: none;   
     }
@@ -31,15 +32,21 @@
 @media screen and (min-width: 501px) and (max-width: 768px) {
     
 }
-@media screen and (max-width: 768px) {
-    body{
+@media screen and (max-width: 767px) {
+    .body-mobile{
         background-image:url("res/FONDO.png"); 
         background-size: cover;
         background-repeat: no-repeat;
         overflow-x: hidden; 
     }
+   
+  
+    .row-bg{
+        background-color: transparent !important;
+    }
+
     .mobile-cartel {
-        background-image: url(res/Option\ B.png) ;
+        background-image: url("res/Option\ B.png") ;
         background-size: contain;
         background-repeat: no-repeat;
         transform: scale(1.25);
