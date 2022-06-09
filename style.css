@@ -188,6 +188,9 @@ body{
     #sus1{
         margin-left: 1em;
     }
+    .mint-button{
+        width: 7em !important;
+    }
 
 }
 @media screen and (max-width: 1230px){
@@ -321,9 +324,9 @@ and (max-device-width : 375px) {
   
 } 
 .mint-button{
-    width: 4.5em;
+    width: 5.5em;
     height: 1.8em !important;
-    margin-left: 18px;
+    margin-left: 5px;
     font-size: 17px;
 }
 .number{
