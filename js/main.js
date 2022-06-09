@@ -14,7 +14,7 @@ var balance
 var tokenbalance
 var available
 var mynft;
-let balance2
+let balance2 = 0;
 var currentAddr = null;
 var balanceNFT
 var IsAproba;
@@ -124,6 +124,7 @@ async function loadAccount() {
   accounts = await web3.eth.getAccounts()
   balance = await contract.methods.balanceOf(accounts[0]).call()
    balance2 = await contract2.methods.getStakeNftBalance().call()
+   console.log(balance2)
    price = await contract2.methods.Price().call()
    var balanceadmin = await contract.methods.balanceOf(accounts[0]).call()
   
@@ -164,7 +165,7 @@ async function loadDapp() {
           PriceMatic = await contract.methods.cost().call() 
 
 
-          document.getElementById("total_mint").textContent = (parseFloat(total_mint) - parseFloat(balance2)) + "/" + MAX_SUPPLY
+          document.getElementById("total_mint").textContent = `${parseFloat(total_mint) - parseFloat(balance2)} / ${MAX_SUPPLY}`  
     
 
 
