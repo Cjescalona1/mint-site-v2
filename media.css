@@ -17,7 +17,7 @@
 }
 
 @media screen and (min-width: 768px) {
-    body{
+    .body-desktop{
         background-image:url(res/nave11-01.png), url("res/FONDO.png");
         background-size: cover;
         background-repeat: no-repeat;
@@ -31,8 +31,8 @@
 @media screen and (min-width: 501px) and (max-width: 768px) {
     
 }
-@media screen and (max-width: 768px) {
-    body{
+@media screen and (max-width: 767px) {
+    .body-mobile{
         background-image:url("res/FONDO.png"); 
         background-size: cover;
         background-repeat: no-repeat;
