@@ -127,6 +127,25 @@ body{
     text-shadow: whitesmoke 1px 1px 1px;
     max-width: fit-content !important;
 }
+
+@media screen and (min-width:900px) and (max-width:1200px) {
+    .num {
+        margin: -1em -30%;
+    }
+    #sus1 {
+        margin-left: 3em !important;
+    }
+    
+}
+@media screen and (min-width: 1440px) {
+    .num {
+        margin: 0 40% !important;
+    }
+    .mint-button {
+        margin: 0 50% !important;
+    }
+}
+
 @media screen and (min-width: 1400px) {
     .mint-button{margin:0 25%;}
     .num{margin: 0 15%;}
@@ -158,6 +177,19 @@ body{
 } 
 
 
+@media screen and (min-width:900px ) {
+    .price{
+        font-size: calc(0.9em + 0.5vw);
+        text-align: right;
+    }
+    .fee{
+        text-align: right;
+    }
+    #sus1{
+        margin-left: 1em;
+    }
+
+}
 @media screen and (max-width: 1230px){
     .tit-opt{
         font-size: calc(1.2em + 1.2vw);
@@ -233,7 +265,7 @@ and (max-device-width : 480px) {
     left: 0;
     padding: 0px 12%;
     line-height: 1;
-    text-align:  right !important;
+    text-align:  justify !important;
 }
 .disclaimer {
     text-align: center;
