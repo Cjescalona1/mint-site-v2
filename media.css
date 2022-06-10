@@ -68,20 +68,36 @@
     .D{
         display: none;
     }
-
-
+    .num-group *{
+        z-index: 1500000 !important;
+    }
+ 
+     #sus1>*, #sus2>*,#add1>*#add2>*{
+         z-index: 10000;
+     }
+     .a-s{
+            z-index: 950000;
+     }
     .body-mobile{
         background-image:url("res/FONDO.png"); 
         background-size: cover;
         background-repeat: no-repeat;
         overflow: hidden; 
     }
-   
-  
     .row-bg{
         background-color: transparent !important;
+        position: relative;
+        z-index: -1;
     }
-
+    .row-bg *{
+        z-index: -1;
+    }
+    .row-top *{
+        margin-top: 0;
+    }
+    .row-top{
+        margin-top: 0;
+    }
     .mobile-cartel {
         background-image: url("res/no-disclaimer.png")  ;
         background-size: contain;
