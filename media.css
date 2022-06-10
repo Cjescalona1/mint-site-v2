@@ -32,6 +32,7 @@
     }
     .M{display: none;}
     .D{
+     
         top: 1em;
         margin: 0%;
         padding: 0;
@@ -44,15 +45,18 @@
     list-style: none;
    } 
     .D>ul>li{
+        z-index: 5005;
         margin-left: 1em;
         margin-right: 1em;
     }
     .D>ul>li>a{
+        z-index: 5005;
         color: antiquewhite;
         font-size: 1.5em;
         text-decoration: none;
     }
     .D>ul>li>a>img{
+        z-index: 5005;
         height: 45px;
         width: 45px;
     }
@@ -79,7 +83,7 @@
     }
 
     .mobile-cartel {
-        background-image: url("res/Option\ B.png")  ;
+        background-image: url("res/no-disclaimer.png")  ;
         background-size: contain;
         background-repeat: no-repeat;
         transform: scale(1.25);
@@ -90,6 +94,7 @@
     }
     .cartel{
         width: 100vw !important;
+        z-index:-1 ;
     }
     .row-top {
         justify-content: center !important;
@@ -110,11 +115,11 @@
     .info-class-mobile{
         position: fixed;
         background-image: url(res/nave-02.png);
-        background-size: contain;
         height: 50vh;
         background-repeat: no-repeat;
         background-position: center;
         bottom: 3em;
+        background-size: auto 100%;
     }
     .title {
         font-weight: bolder;
