@@ -169,7 +169,7 @@ async function loadDapp() {
           console.log(cantotal)
           document.getElementById("total_mint").textContent = `${parseFloat(total_mint) - parseFloat(balance2)} / ${MAX_SUPPLY}`  
           document.getElementById("priceUWU").textContent = `${web3.utils.fromWei(price)} $UWU`  
-          document.getElementById("priceMATIC").textContent = `${web3.utils.fromWei(PriceMatic)} $MATIC`  
+          document.getElementById("priceMATIC").textContent = `${web3.utils.fromWei(PriceMatic)} MATIC`  
     
 
 
